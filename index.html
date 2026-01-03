@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Recorder - Join the Waitlist</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-globes">
+        <div class="globe globe-1"></div>
+        <div class="globe globe-2"></div>
+        <div class="globe globe-3"></div>
+    </div>
+
+    <main class="container">
+        <div class="glass-card">
+            <header>
+                <h1>Dream Recorder</h1>
+                <p class="subtitle">Unlock the secrets of your subconscious.</p>
+            </header>
+
+            <img src="public/sheep.svg" alt="Dream Sheep" class="sheep-mascot">
+
+            <div class="content">
+                <p class="description">
+                    Premium dream journaling and analysis. <br>
+                    Experience the future of sleep tracking.
+                </p>
+
+                <form id="waitlist-form">
+                    <div class="input-group">
+                        <input type="email" id="email" placeholder="Enter your email" required autocomplete="email">
+                        <button type="submit" id="submit-btn">
+                            <span>Join Waitlist</span>
+                            <div class="loader hidden"></div>
+                        </button>
+                    </div>
+                    <p id="message" class="message hidden"></p>
+                </form>
+            </div>
+
+            <footer>
+                <p>Coming soon to iOS & Android</p>
+            </footer>
+        </div>
+    </main>
+</body>
+
+</html>
